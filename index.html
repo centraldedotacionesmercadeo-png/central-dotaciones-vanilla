@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Central de Dotaciones — Versión desde cero</title>
+  <meta name="description" content="Versión desde cero: HTML + CSS + JS — Central de Dotaciones S.A.S" />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="#inicio"><img src="assets/img/logo.png" alt="Logo" class="logo-small"> Central de Dotaciones S.A.S</a>
+      <button id="menuToggle" class="menu-toggle">☰</button>
+      <nav id="mainNav" class="main-nav">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap">
+        <div class="hero-left">
+          <h1>+30 años de trayectoria en dotaciones industriales</h1>
+          <p>Calidad, compromiso y soluciones a la medida para tu empresa.</p>
+          <p>
+            <a class="btn primary" href="assets/_CATALOGO_2025.pdf" target="_blank">Ver Catálogo</a>
+            <a class="btn outline" href="#contacto">Solicitar Cotización</a>
+          </p>
+        </div>
+        <div class="hero-right">
+          <img src="assets/img/logo.png" alt="Logo" class="logo-hero">
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section">
+      <div class="wrap">
+        <h2>Nuestros Servicios</h2>
+        <div class="grid">
+          <div class="card"><h3>Uniformes</h3><p>Diseño y personalización (bordados y estampados).</p></div>
+          <div class="card"><h3>EPPS</h3><p>Equipos de protección personal certificados.</p></div>
+          <div class="card"><h3>Dotación Masiva</h3><p>Precios corporativos y entregas programadas.</p></div>
+          <div class="card"><h3>Logística</h3><p>Almacenamiento y distribución con seguimiento.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogo" class="section alt">
+      <div class="wrap">
+        <h2>Catálogo Digital</h2>
+        <p>Accede a nuestro catálogo con especificaciones y más de 200 productos.</p>
+        <a class="btn yellow" href="assets/_CATALOGO_2025.pdf" target="_blank">Abrir Catálogo PDF</a>
+      </div>
+    </section>
+
+    <section id="nosotros" class="section">
+      <div class="wrap">
+        <h2>Quiénes Somos</h2>
+        <p>Desde 1994, Central de Dotaciones S.A.S ha acompañado a cientos de empresas con soluciones en dotación y uniformes.</p>
+        <div class="grid two">
+          <div><h4>Misión</h4><p>Proveer soluciones integrales en dotación que aseguren calidad y seguridad.</p></div>
+          <div><h4>Visión</h4><p>Ser líder en dotación industrial por innovación y excelencia en servicio.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section alt">
+      <div class="wrap">
+        <h2>Contacto</h2>
+        <div class="grid two">
+          <div>
+            <form id="contactForm">
+              <label>Nombre completo<input type="text" name="nombre" required></label>
+              <label>Empresa<input type="text" name="empresa"></label>
+              <label>Correo<input type="email" name="email" required></label>
+              <label>Teléfono<input type="tel" name="telefono"></label>
+              <label>Mensaje<textarea name="mensaje"></textarea></label>
+              <p><button class="btn primary" type="submit">Enviar</button> <a class="btn" href="https://wa.me/573118109568" target="_blank">WhatsApp</a></p>
+            </form>
+          </div>
+          <div>
+            <p>
+            Teléfonos: 601 711 0583 / 601 728 3480<br>
+            Celular: 311 810 9568<br>
+            Correos: atencionalcliente@centraldedotaciones.com / gventas@centraldedotaciones.com<br>
+            Dirección: Cra 69A No. 31-62 sur, Barrio Carvajal, Bogotá D.C.<br>
+            Instagram: @centraldedotacionssas
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© 2025 Central de Dotaciones S.A.S — Todos los derechos reservados.</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

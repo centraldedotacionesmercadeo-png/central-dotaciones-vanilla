@@ -1,0 +1,55 @@
+/* CSS desde cero — plantilla de respaldo */
+:root{
+  --black: #000000;
+  --yellow: #F2B400;
+  --red: #D82B2B;
+  --bg: #f7f7f7;
+  --muted: #666;
+  --max: 1100px;
+}
+
+*{box-sizing:border-box}
+body{font-family: Arial, Helvetica, sans-serif; margin:0; color:var(--black); background:#fff}
+
+.wrap{max-width:var(--max); margin:0 auto; padding:20px}
+
+.site-header{border-bottom:1px solid #eee}
+.site-header .wrap{display:flex; align-items:center; gap:12px}
+.brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--black)}
+.logo-small{height:40px}
+
+.menu-toggle{margin-left:auto; background:none; border:none; font-size:20px; display:none}
+.main-nav a{margin-left:18px; text-decoration:none; color:var(--muted)}
+
+.hero{display:flex; gap:30px; padding:40px 0; align-items:center}
+.hero-left h1{margin:0 0 12px; font-size:32px}
+.logo-hero{max-width:220px}
+
+.section{
+  padding:30px 0;
+}
+
+.grid{display:grid; grid-template-columns:repeat(4,1fr); gap:16px}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+.card{background:#fff;border:1px solid #eee;padding:16px;border-radius:8px;box-shadow:0 6px 12px rgba(0,0,0,0.03)}
+
+.btn{display:inline-block;padding:10px 16px;text-decoration:none;border-radius:6px}
+.btn.primary{background:var(--black); color:#fff}
+.btn.outline{border:1px solid var(--black); color:var(--black)}
+.btn.yellow{background:var(--yellow); color:#111}
+
+.section.alt{background:var(--bg)}
+
+.site-footer{border-top:1px solid #eee;padding:20px;text-align:center;color:var(--muted)}
+
+/* Responsive */
+@media (max-width: 900px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .menu-toggle{display:block}
+  .main-nav{display:none; position:absolute; right:20px; background:#fff; border:1px solid #eee; padding:10px; top:60px}
+  .hero{flex-direction:column; text-align:center}
+}
+@media (max-width: 520px){
+  .grid{grid-template-columns:1fr}
+  .grid.two{grid-template-columns:1fr}
+}
